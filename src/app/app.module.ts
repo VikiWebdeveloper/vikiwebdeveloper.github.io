@@ -8,13 +8,15 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore'
 import { environment } from 'src/environments/environment';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { ShowComponent } from './show/show.component'
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShowComponent
   ],
   imports: [
     BrowserModule,
