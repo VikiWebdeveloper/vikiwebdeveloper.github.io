@@ -19,6 +19,7 @@ export class AppComponent {
     noteDetails['title'] = this.title;
     noteDetails['desc'] = this.desc;
     noteDetails['priority'] = this.priority;
+    noteDetails['created'] = new Date();
     console.log(noteDetails)
     this.fbService.addNoteToBase(noteDetails).then(res => {
       console.log(res);
