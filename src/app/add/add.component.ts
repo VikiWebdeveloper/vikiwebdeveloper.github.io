@@ -1,3 +1,4 @@
+import { AppComponent } from './../app.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
