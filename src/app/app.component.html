@@ -1,13 +1,16 @@
 <div class="container">
   <h1>Add note and set the date to be reminded</h1>
   <div class="form-group">
-    <input type="text" class = "form-control" [(ngModel)]='note' placeholder="Enter the note">
+    <input type="text" class = "form-control" [(ngModel)]='title' placeholder="Enter the note">
   </div>
   <div class="form-group">
-    <input type="date" class = "form-control" [(ngModel)]='remindDate'>
+    <input type="text" class = "form-control" [(ngModel)]='desc'>
   </div>
   <div class="form-group">
-    <button class="btn btn-primary" [disabled]="!note || !remindDate" (click)="addNote()">
+    <input type="number" max='5' min='1' class = "form-control" [(ngModel)]='priority'>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" [disabled]="!title || !priority" (click)="addNote()">
       Add note
     </button>
   </div>

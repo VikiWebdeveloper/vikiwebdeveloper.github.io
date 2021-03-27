@@ -1,1 +1,11 @@
-<p>show works!</p>
+<div class="col-md-4" 
+[class.p1] = "item.priority == 1"
+[class.p2] = "item.priority == 2"
+[class.p3] = "item.priority == 3"
+[class.p4] = "item.priority == 4"
+[class.p5] = "item.priority == 5"
+    *ngFor="let item of notes">
+        <header>{{item.title}}</header>
+        <p title="{{item.desc}}">{{item.desc}}</p>
+<!-- <p>{{item.state}}</p> -->
+</div>
